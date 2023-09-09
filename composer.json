@@ -3,5 +3,10 @@
     "description": "A lightweight PHP framework",
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "sjrobert17\\ThaliumPHP\\": "src/"
+        }
     }
 }

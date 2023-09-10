@@ -12,7 +12,7 @@ class Container
 
     protected $container;
 
-    public function __constructor()
+    public function __construct()
     {
         $this->container = new PhpBenchContainer();
         $this->container->init();

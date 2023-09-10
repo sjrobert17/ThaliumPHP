@@ -7,7 +7,7 @@ class Application
 
     public $container;
 
-    public function __constructor()
+    public function __construct()
     {
         $this->container = Container::instance();
     }

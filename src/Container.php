@@ -15,7 +15,6 @@ class Container
     public function __construct()
     {
         $this->container = new PhpBenchContainer();
-        $this->container->init();
     }
 
     public function has($id)
@@ -31,5 +30,10 @@ class Container
     public function set($id, $instance)
     {
         return $this->container->set($id, $instance);
+    }
+
+    public function init()
+    {
+        return $this->container->init();
     }
 }

@@ -14,7 +14,10 @@ class Application
         $config = Config::instance();
         $config->loadConfigurationFolder(dirname(__FILE__) . '/Config');
         $this->container->set('config', $config);
-
+        
+        $database = new Database();
+        $this->container->set('database', $database);
+        
         $this->container->init();
     }
 }
